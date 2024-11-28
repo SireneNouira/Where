@@ -1,7 +1,6 @@
 // get
 
 // event
-document.addEventListener("load", confetti);
 
 // functions
   const duration = 15 * 1000,
