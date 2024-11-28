@@ -3,9 +3,9 @@
 // event
 
 // functions
-  const duration = 15 * 1000,
-  animationEnd = Date.now() + duration,
-  defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+const duration = 15 * 1000,
+animationEnd = Date.now() + duration,
+defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
 function randomInRange(min, max) {
   return Math.random() * (max - min) + min;
@@ -34,3 +34,42 @@ const interval = setInterval(function() {
     })
   );
 }, 250);
+
+const stars = {
+  spread: 360,
+  ticks: 50,
+  gravity: 0,
+  decay: 0.94,
+  startVelocity: 30,
+  shapes: ["star"],
+  colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+};
+
+function shootStars() {
+  confetti({
+    ...stars,
+    particleCount: 40,
+    scalar: 1.2,
+    shapes: ["star"],
+  });
+
+  confetti({
+    ...stars,
+    particleCount: 10,
+    scalar: 0.75,
+    shapes: ["circle"],
+  });
+};
+
+setTimeout(shootStars, 0);
+setTimeout(shootStars, 200);
+setTimeout(shootStars, 400);
+setTimeout(shootStars, 600);
+setTimeout(shootStars, 800);
+setTimeout(shootStars, 1000);
+setTimeout(shootStars, 1200);
+setTimeout(shootStars, 1400);
+setTimeout(shootStars, 1600);
+setTimeout(shootStars, 1800);
+setTimeout(shootStars, 2000);
+setTimeout(shootStars, 2200);
