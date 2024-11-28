@@ -5,21 +5,19 @@
   scroll-behavior: smooth;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
+  outline: none;
 }
 :root {
   --bg-color: #151619;
-  --text-color: #ffc4ff;
-  --border-color: #8cdeff;
+  --text-color: #241251;
+ 
 }
 body {
   color: var(--text-color);
-  /* background-color: var(--bg-color); */
+  background: linear-gradient(45deg, #8cdeff, #ffc4ff);
   padding: 5rem;
-background-color: #151619;
 
-  margin: 0; 
   height: 100vh;
-
 }
 
 #presentaion {
@@ -58,22 +56,36 @@ background-color: #151619;
   border-radius: 10px;
   background-color: rgb(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  position: relative;
 }
-.box-liste h3 {
-  font-size: 2rem;
-}
+
 .inputs {
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  background: rgba(255, 255, 255, .3);
+  padding: 3rem;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1pc solid rgba(255, 255, 255, .3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+  text-align: center;
+
+  h3{
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   }
-  li {
-    color: var(--border-color);
-    
+  input{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
   }
-  padding: 2rem;
-  width: 300px;
 }
 .button-genere a {
   font-size: 35px;
