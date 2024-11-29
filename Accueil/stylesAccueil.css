@@ -20,7 +20,7 @@ body {
   height: 100vh;
 }
 
-#presentaion {
+#presentation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 
   text-align: center;
 }
-#presentaion h1 {
+#presentation h1 {
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   
@@ -78,7 +78,7 @@ body {
     border: none;
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: 1px solid rgba(255, 255, 255, .3);
-    padding-bottom: 15px;
+    
     width: 150px;
     height: 30px;
     border-radius: 50px;
