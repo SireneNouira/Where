@@ -1,30 +1,37 @@
-// get 
+// GET
+
 // all names
 let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi"];
-let count = 0;
-// all places
-const places = document.querySelectorAll(".seat");
+// div row
+const row = document.querySelector(".row");
 // how much places
-const nPlaces = places.length;
+const nPlaces = names.length - 1;
 
 
 // event
 
 
 // functions
+
 // randomize array name
 for(let i = nPlaces; i >= 0; i -= 1){
-    // randomizer of j 
-    let j = (Math.floor(Math.random() * nPlaces));
+    // randomizer of x
+    let x = (Math.floor(Math.random() * nPlaces));
     // create temp var to containe actual index
     let temp = names[i];
-    // switch the actual index(i) and randomze index(j)
-    names[i] = names[j];
-    names[j] = temp;
+    // switch the actual index(i) and randomze index(x)
+    names[i] = names[x];
+    names[x] = temp;
 };
 
 // named place 
-places.forEach((element) => {
-    element.innerHTML = names[count];
-    count += 1;
+names.forEach((name) => {
+    // create div foreach name
+    const newDiv = document.createElement("div");
+    // ADD class ".seat" at the new div
+    newDiv.classList.add("seat")
+    // ADD name inside newDiv
+    newDiv.appendChild(document.createTextNode(`${name}`));
+    // ADD new div at the end of the row div
+    row.appendChild(newDiv);
 });

@@ -33,7 +33,8 @@ body {
 }
 
 .seat {
-  width: 40px;
+  min-width: 40px;
+  padding: 0px 15px;
   height: 40px;
   display: flex;
   justify-content: center;
