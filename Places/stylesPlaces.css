@@ -13,9 +13,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
+  flex-direction: column;
   background: linear-gradient(45deg, #8cdeff, #ffc4ff);
   height: 100vh;
+
+  /* we need to do style on this one */
+  button{
+    padding: 10px;
+  }
 }
 
 .container {
