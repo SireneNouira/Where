@@ -12,6 +12,7 @@ const nPlaces = names.length - 1;
 
 
 // functions
+
 // randomize array name
 for(let i = nPlaces; i >= 0; i -= 1){
     // randomizer of x
@@ -26,12 +27,19 @@ for(let i = nPlaces; i >= 0; i -= 1){
 
 // named place 
 names.forEach((name) => {
+        // create p foreach name
+        const newP = document.createElement("p");
+        // ADD class ".name" at the new P
+        newP.classList.add("name");
+        // ADD name inside newP
+        newP.appendChild(document.createTextNode(`${name}`));
+
         // create div foreach name
         const newDiv = document.createElement("div");
         // ADD class ".seat" at the new div
         newDiv.classList.add("seat")
-        // ADD name inside newDiv
-        newDiv.appendChild(document.createTextNode(`${name}`));    
-        // ADD new div at the end of the ROW div
+        // ADD newP inside newDiv
+        newDiv.appendChild(newP);    
+        // ADD newdiv at the end of the container div
         container.appendChild(newDiv);
 });
