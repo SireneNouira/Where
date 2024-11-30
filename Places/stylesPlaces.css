@@ -64,11 +64,19 @@ body {
   cursor: pointer;
   user-select: none;
   font-size: 2rem;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.appear{
+  opacity: 1.2;
 }
 
 .seat:hover {
   background-color: #fdb2f5;
 }
+
+
 
 /* .un, .deux{
   display: none;
