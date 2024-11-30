@@ -1,8 +1,8 @@
 // GET
 
 // all names
-let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "7", "8", "9", "10", "11", "12", "13", "14", "15"];
-// div row
+let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
+// divs
 const row = document.querySelector(".row");
 const row2 = document.querySelector(".deux");
 const col = document.querySelector(".col");
@@ -14,7 +14,6 @@ const nPlaces = names.length - 1;
 
 
 // functions
-
 // randomize array name
 for(let i = nPlaces; i >= 0; i -= 1){
     // randomizer of x
