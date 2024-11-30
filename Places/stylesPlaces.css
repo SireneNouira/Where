@@ -50,9 +50,11 @@ body {
   cursor: pointer;
   user-select: none;
   font-size: 2rem;
+  position: fixed;
+}
+.name{
   opacity: 0;
   transition: opacity 1s linear;
-  position: fixed;
 }
 
 .appear{
