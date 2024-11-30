@@ -9,15 +9,26 @@ body {
   background-color: #f9f9f9;
 }
 
-.container {
+.lateral {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: left;
+  justify-content: space-between;
+}
+.container{
+  display: flex;
+  gap: 10px;
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
 }
 
 .row {
