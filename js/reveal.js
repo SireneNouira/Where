@@ -5,8 +5,8 @@ import explosion from "./confetti.js";
 // GET 
 // button for reveal
 const button = document.querySelector("button");
-// get all div with class .seat
-const divNames = document.querySelectorAll(".seat");
+// get all P with class name
+const Ps = document.querySelectorAll(".name");
 var time = 1000;
 // EVENT 
 button.addEventListener("click", reveal)
@@ -15,9 +15,9 @@ button.addEventListener("click", reveal)
 
 function reveal(event) {
     explosion();
-    divNames.forEach(divName => {
+    Ps.forEach(P => {
         setTimeout(() => {
-            divName.classList.add("appear");
+            P.classList.add("appear");
         },time);
         time += 1000;
     });
