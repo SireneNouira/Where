@@ -8,6 +8,7 @@
   font-family: "Times New Roman", Times, serif;
   outline: none;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -16,8 +17,6 @@ body {
   background: linear-gradient(45deg, #8cdeff, #ffc4ff);
   height: 100vh;
 }
-
-
 
 .container {
   display: flex;
@@ -29,24 +28,6 @@ body {
   border-radius: 10px;
   background-color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(20px);
-}
-
-.lateral {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .seat {
@@ -76,8 +57,6 @@ body {
 .seat:hover {
   background-color: #fdb2f5;
 }
-
-
 
 /* .un, .deux{
   display: none;
