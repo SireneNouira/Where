@@ -29,6 +29,9 @@ body {
   justify-self: center;
   justify-content: center;
   margin-top: 8%;
+  position: relative; /* Nécessaire si vous voulez d'autres éléments à l'intérieur */
+
+  overflow: hidden; 
 }
 
 .row {
@@ -63,14 +66,21 @@ body {
   background-color: #fdb2f5;
 }
 
-.un, .deux{
+/* .un, .deux{
   display: none;
 }
 #compteur{
-  font-size: 10rem;
-  position:fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  font-size: 15rem;
+  z-index: 1000;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
+
+.none{
+  display: none;
+}
+.block{
+  display: block;
+} */

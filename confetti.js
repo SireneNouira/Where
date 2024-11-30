@@ -2,6 +2,31 @@
 
 // event
 
+
+// const chiffres = document.querySelectorAll("#compteur h1");
+// let index = 0;
+// function afficherChiffres() {
+//   if (index > 0) {
+//     // Cache le chiffre précédent
+//     chiffres[index - 1].classList.add("none");
+//     chiffres[index - 1].classList.remove("block");
+//   }
+
+//   if (index < chiffres.length) {
+//     // Affiche le chiffre actuel
+//     chiffres[index].classList.add("block");
+//     chiffres[index].classList.remove("none");
+
+//     // Passe au chiffre suivant après 300ms
+//     setTimeout(() => {
+//       index++;
+//       afficherChiffres();
+//     }, 1000);
+//   }
+// }
+// afficherChiffres();
+
+
 // functions
 const duration = 15 * 1000,
 animationEnd = Date.now() + duration,
