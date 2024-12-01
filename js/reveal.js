@@ -4,6 +4,7 @@ import explosion from "./confetti.js";
 import createAllDiv from "./createDiv.js";
 import randomizer from "./melangeAleatoire.js";
 import distributor from "./distributor.js";
+import disappear from "./diseapper.js";
 
 // GET 
 // Récupérer la liste des noms dans localStorage
@@ -11,7 +12,7 @@ export const names = JSON.parse(localStorage.getItem("savedNames")) || [];
 // Récupérer le container and export at burgerMenu
 export const container = document.querySelector(".container");
 // button for reveal
-const button = document.querySelector(".reveal");
+const revealButton = document.querySelector(".reveal");
 var time = 1000;
 var count = 0;
 
@@ -25,7 +26,7 @@ if (names.length < 2) {
 
 
 // EVENT 
-button.addEventListener("click", reveal)
+revealButton.addEventListener("click", reveal)
 
 // create div foreach name
 createAllDiv(names, container);
@@ -55,4 +56,6 @@ function reveal(event) {
         },time);
         time += 1000;
     });
+
+    disappear(revealButton);
 };
