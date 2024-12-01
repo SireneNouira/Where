@@ -7,13 +7,14 @@ import distributor from "./distributor.js";
 
 // GET 
 // Récupérer la liste des noms dans localStorage
-const names = JSON.parse(localStorage.getItem("savedNames")) || [];
+export const names = JSON.parse(localStorage.getItem("savedNames")) || [];
 // Récupérer le container and export at burgerMenu
-const container = document.querySelector(".container");
+export const container = document.querySelector(".container");
 // button for reveal
 const button = document.querySelector(".reveal");
 var time = 1000;
 var count = 0;
+
 
 // TESTS
 // check if il y a au moin deux noms
@@ -31,7 +32,7 @@ createAllDiv(names, container);
 
 // FUNCTION
 function reveal(event) {
- 
+
     // get all div with class .seat
     const seatDivs = document.querySelectorAll(".seat");
 
