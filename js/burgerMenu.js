@@ -3,14 +3,17 @@
 const buttonBurger = document.querySelector(".buttonBurger");
 // get button create menu burger
 const buttonCreate = document.querySelector(".create");
+// get menu burger
+const menuBurger = document.querySelector(".menuBurger");
 // get container from melangeAleatoire
 import createAllDiv from "./createDiv.js";
 import { container, names } from "./reveal.js";
+import disappear from "./diseapper.js";
 
 
 
 // EVENT
-buttonBurger.addEventListener("click", apearBurgerMenu);
+buttonBurger.addEventListener("click", disappearBurgerMenu);
 buttonCreate.addEventListener("click", callDivCreator);
 
 
@@ -22,7 +25,7 @@ function apearBurgerMenu(event) {
 
 // make apear burger menu
 function disappearBurgerMenu(event) {
-
+    disappear(menuBurger);
 };
 
 // create element in container 

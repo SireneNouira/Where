@@ -57,13 +57,14 @@ body {
 
   /* menu burger */
   .menuBurger{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
     height: 200px;
     width: 300px;
+    margin: 10px;
     background-color: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
     box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
@@ -109,7 +110,6 @@ body {
 
   /* button reveal */
   .reveal{
-    
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border: none;
@@ -171,6 +171,10 @@ body {
 
 .appear{
   opacity: 1.2;
+}
+
+.appearMenuBurger{
+  display: flex;
 }
 
 .disappear {
