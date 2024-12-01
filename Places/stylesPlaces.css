@@ -173,10 +173,6 @@ body {
   opacity: 1.2;
 }
 
-.appearMenuBurger{
-  display: flex;
-}
-
 .disappear {
   display: none;
 }

@@ -31,7 +31,8 @@ function apearBurgerMenu(event) {
 
 // make disappear burger menu
 function disappearBurgerMenu(event) {
-    // make disappear the nenu burger
+    // make disappear the nenu burger 
+    
     disappear(menuBurger);
 };
 
