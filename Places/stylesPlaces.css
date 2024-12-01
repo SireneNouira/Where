@@ -109,6 +109,7 @@ body {
 
   /* button reveal */
   .reveal{
+    
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border: none;
@@ -170,6 +171,10 @@ body {
 
 .appear{
   opacity: 1.2;
+}
+
+.disappear {
+  display: none;
 }
 
 .seat:hover {
