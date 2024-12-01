@@ -1,7 +1,14 @@
 // GET
+// Récupérer la liste localStorage
+let names = JSON.parse(localStorage.getItem("savedNames")) || []; 
+
+if (names.length < 2) {
+  alert("Aucune donnée valide trouvée. Retour à la page précédente.");
+  window.location.href = "index.html"; 
+}
 
 // all names
-let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
+//let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
 // divs
 const container = document.querySelector(".container");
 // how much places
@@ -43,3 +50,5 @@ names.forEach((name) => {
         // ADD newdiv at the end of the container div
         container.appendChild(newDiv);
 });
+
+
