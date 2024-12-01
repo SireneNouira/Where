@@ -8,7 +8,13 @@ if (names.length < 2) {
 }
 
 // all names
+<<<<<<< HEAD
 //let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
+=======
+
+// get element from the local storage
+const names = JSON.parse(localStorage.getItem("savedNames"));   
+>>>>>>> d66d407b43e88b0ea7fde4b5738b06ae84c882d4
 // divs
 const container = document.querySelector(".container");
 // how much places
@@ -16,7 +22,6 @@ const nPlaces = names.length - 1;
 
 
 // event
-
 
 // functions
 

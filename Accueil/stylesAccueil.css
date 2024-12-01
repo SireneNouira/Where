@@ -6,10 +6,12 @@
   text-decoration: none;
   outline: none;
 }
+
 :root {
   --bg-color: #151619;
   --text-color: #241251;
 }
+
 body {
   color: var(--text-color);
   background: linear-gradient(45deg, #8cdeff, #ffc4ff);
@@ -25,6 +27,7 @@ body {
 
   text-align: center;
 }
+
 #presentation h1 {
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -37,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .box-liste {
   text-align: center;
   display: flex;
@@ -94,14 +98,17 @@ body {
     list-style-type: none;
   }
 }
+
 ::placeholder {
   color: white;
 }
+
 input:hover,
 input[type="text"]:focus {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
 }
+
 .drop {
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
@@ -113,12 +120,14 @@ input[type="text"]:focus {
   border-radius: 10px;
   box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
 }
+
 .drop-1 {
   height: 80px;
   width: 80px;
   bottom: -20px;
   left: -30px;
 }
+
 .drop-2 {
   height: 80px;
   width: 80px;
@@ -126,6 +135,7 @@ input[type="text"]:focus {
   right: 0px;
   z-index: -1;
 }
+
 .drop-3 {
   height: 100px;
   width: 100px;
@@ -133,12 +143,14 @@ input[type="text"]:focus {
   left: -20px;
   z-index: -1;
 }
+
 .drop-4 {
   height: 100px;
   width: 100px;
   top: -50px;
   left: -30px;
 }
+
 .drop-5 {
   height: 60px;
   width: 60px;
@@ -169,9 +181,11 @@ input[type="text"]:focus {
   border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
 }
+
 .button-genere a:hover {
   box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
 }
+<<<<<<< HEAD
 #saveNames{
   font-size: 1.5rem;
   font-weight: 700;
@@ -185,6 +199,9 @@ input[type="text"]:focus {
   border-top: 1px solid rgba(255, 255, 255); border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
 }
+=======
+
+>>>>>>> d66d407b43e88b0ea7fde4b5738b06ae84c882d4
 footer {
   position: absolute;
   left: 0;
@@ -195,24 +212,29 @@ footer {
   overflow: hidden;
   z-index: -1000;
 }
+
 .line {
   position: absolute;
   width: 100%;
   overflow: hidden;
   height: 100%;
 }
+
 .line-1 {
   z-index: 15;
   opacity: 0.5;
 }
+
 .line-2 {
   z-index: 10;
   opacity: 0.7;
 }
+
 .line-3 {
   z-index: 5;
   opacity: 0.9;
 }
+
 .wave {
   position: absolute;
   left: 0;
@@ -222,15 +244,18 @@ footer {
   background-position: 0 bottom;
   transform-origin: center bottom;
 }
+
 .wave1 {
   -webkit-background-size: 50% 80px;
   background-size: 50% 80px;
 }
+
 .wave2 {
   -webkit-background-size: 50% 100px;
   background-size: 50% 100px;
   animation: animate 12s linear infinite;
 }
+
 .wave3 {
   -webkit-background-size: 50% 80px;
   background-size: 50% 80px;
