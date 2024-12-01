@@ -3,6 +3,8 @@
 const buttonBurger = document.querySelector(".buttonBurger");
 // get button create menu burger
 const buttonCreate = document.querySelector(".create");
+// get disappear button menu burger
+const buttonDisappear = document.querySelector(".menuBurger");
 // get menu burger
 const menuBurger = document.querySelector(".menuBurger");
 // get container from melangeAleatoire
@@ -13,18 +15,23 @@ import disappear from "./diseapper.js";
 
 
 // EVENT
-buttonBurger.addEventListener("click", disappearBurgerMenu);
+buttonBurger.addEventListener("click", apearBurgerMenu);
+buttonDisappear.addEventListener("click", disappearBurgerMenu);
 buttonCreate.addEventListener("click", callDivCreator);
 
 
 // FUNCTION
 // make apear burger menu
 function apearBurgerMenu(event) {
-
+    // make appear menu burger
+    menuBurger.style.display = "flex";
+    // make disappear the appearision button
+    disappear(buttonBurger);
 };
 
-// make apear burger menu
+// make disappear burger menu
 function disappearBurgerMenu(event) {
+    // make disappear the nenu burger
     disappear(menuBurger);
 };
 
