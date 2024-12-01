@@ -15,9 +15,14 @@ buttonCreate.addEventListener("click", callDivCreator);
 
 
 // FUNCTION
-
 // make apear burger menu
 function apearBurgerMenu(event) {
+
+};
+
+// make apear burger menu
+function disappearBurgerMenu(event) {
+
 };
 
 // create element in container 
