@@ -24,8 +24,6 @@
 //   }
 // }
 // afficherChiffres();
-
-
 // functions
 
 export default function explosion() {
