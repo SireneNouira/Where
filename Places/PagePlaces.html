@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesPlaces.css">
-    <script defer src="../js/melangeAleatoire.js"></script>
+
+    <script defer type="module" src="../js/melangeAleatoire.js"></script>
     <script defer type="module" src="../js/reveal.js"></script>
+    <script defer type="module" src="../js/burgerMenu.js"></script>
     <script defer src="../js/dragAndDrop.js"></script>
     <script type="module" src="../js/confetti.js"></script>
+    <script src="../js/diseapper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    
     <title>Where ?</title>
   </head>
   <body>
@@ -17,11 +21,34 @@
       <h1 class="deux">2</h1>
       <h1 class="un">1</h1>
     </div> -->
-    <!-- container -->
-    <button>REVEAL</button>
-    <div class="container">
+
+    <!-- button burger -->
+    <div class="buttonBurger">
+      <div class="plus">
+      <hr class="horizon">
+      <hr class="vertical">
+      </div>
+    </div>
+
+    <!-- disapear button -->
+    <div class="disappearButtonBurger">
+      <div class="plus">
+      <hr class="horizon">
+      <hr class="vertical">
+      </div>
     </div>
     
-    
+    <!-- menu burger -->
+    <div class="menuBurger">
+      <input type="text" placeholder="name">
+      <button class="create">create</button>
+    </div>
+
+    <!-- button reveal -->
+    <button class="reveal">REVEAL</button>
+
+    <!-- container -->
+    <div class="container">
+    </div>
   </body>
 </html>
