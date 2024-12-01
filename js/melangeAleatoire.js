@@ -1,25 +1,19 @@
 // GET
-// Récupérer la liste localStorage
-let names = JSON.parse(localStorage.getItem("savedNames")) || []; 
-
-if (names.length < 2) {
-  alert("Aucune donnée valide trouvée. Retour à la page précédente.");
-  window.location.href = "index.html"; 
-}
-
-// all names
-
-//let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
-
-// divs
-const container = document.querySelector(".container");
+// Récupérer la liste des noms dans localStorage
+const names = JSON.parse(localStorage.getItem("savedNames")) || []; 
+// Récupérer le container and export at burgerMenu
+export const container = document.querySelector(".container");
 // how much places
 const nPlaces = names.length - 1;
 
+// check if il y a au moin deux noms
+if (names.length < 2) {
+  alert("Aucune donnée valide trouvée. Retour à la page précédente.");
+  window.location.href = "index.html"; 
+};
 
-// event
 
-// functions
+// FUNCTIONS
 
 // randomize array name
 for(let i = nPlaces; i >= 0; i -= 1){

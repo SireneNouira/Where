@@ -4,9 +4,8 @@ import explosion from "./confetti.js";
 
 // GET 
 // button for reveal
-const button = document.querySelector("button");
-// get all P with class name
-const Ps = document.querySelectorAll(".name");
+const button = document.querySelector(".reveal");
+
 var time = 1000;
 // EVENT 
 button.addEventListener("click", reveal)
@@ -14,6 +13,10 @@ button.addEventListener("click", reveal)
 // FUNCTION
 
 function reveal(event) {
+
+    // get all P with class name
+    const Ps = document.querySelectorAll(".name");
+    
     explosion();
     Ps.forEach(P => {
         setTimeout(() => {
