@@ -11,7 +11,7 @@ import { container, names } from "./reveal.js";
 
 // EVENT
 buttonBurger.addEventListener("click", apearBurgerMenu);
-buttonCreate.addEventListener("click", createDiv);
+buttonCreate.addEventListener("click", callDivCreator);
 
 
 // FUNCTION
@@ -21,16 +21,22 @@ function apearBurgerMenu(event) {
 };
 
 // create element in container 
-function createDiv(event) {
+function callDivCreator(event) {
 
     // get input value in menu burger
-    const name = (document.querySelector("input").value).toString();
-    if (name.trim() !== "") {
-        names.push(name.trim());
-    }
-    // set new item on local storage
-    localStorage.setItem("savedNames", JSON.stringify(names));
+    const input = document.querySelector("input");
+    const name = (input.value).toString();
 
-   createAllDiv(name, container);
+    if (name.trim() !== "") {
+        console.log(name)
+        names.push(name.trim());    
+
+        // set new item on local storage
+        localStorage.setItem("savedNames", JSON.stringify(names));
+
+        createAllDiv(name, container);
+    };
+    // for reset input
+    input.value = "";
 };
 
