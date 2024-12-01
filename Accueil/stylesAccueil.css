@@ -31,7 +31,6 @@ body {
 #presentation h1 {
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: "Caveat", sans-serif;
 }
 
 #liste {
@@ -79,7 +78,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   input {
-    background: transparent;
+    background:transparent;
     border: none;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -90,7 +89,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
     box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
@@ -175,24 +174,27 @@ input[type="text"]:focus {
   border-radius: 50px;
   padding: 15px 30px;
   cursor: pointer;
-  border-radius: 50px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
   color: var(--text-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
   background: transparent;
   border: none;
   border-left: 1px solid rgba(255, 255, 255);
   border-top: 1px solid rgba(255, 255, 255);
-  transition: all 0.3s;
   border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    transition: 
+    1s background-color linear,
+    0.5s color linear;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .button-genere a:hover {
-  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  
+    background-color: #413c69;
+    box-shadow: 0px 0px 15px 1px  rgba(255, 255, 255);
+    color: rgba(255, 255, 255);
+  
 }
 #saveNames{
   font-size: 1.5rem;
@@ -206,6 +208,11 @@ input[type="text"]:focus {
   border-left: 1px solid rgba(255, 255, 255);
   border-top: 1px solid rgba(255, 255, 255); border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
 }
 #resetFields{
   font-size: 1.5rem;
@@ -219,6 +226,10 @@ input[type="text"]:focus {
   border-left: 1px solid rgba(255, 255, 255);
   border-top: 1px solid rgba(255, 255, 255); border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
 
 }
 .boutons-inputs{
@@ -226,6 +237,11 @@ input[type="text"]:focus {
  gap: 10px;
  justify-content: center;
 padding-top: 5%;
+}
+#resetFields:hover, #saveNames:hover{
+  background-color: #413c69;
+  box-shadow: 0px 0px 15px 1px  rgba(255, 255, 255);
+  color: rgba(255, 255, 255);
 }
 footer {
   position: absolute;

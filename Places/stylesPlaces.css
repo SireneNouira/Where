@@ -19,7 +19,7 @@ body {
   height: 100vh;
 
   /* we need to do style on this one */
-  button{
+button{
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border: none;
@@ -30,8 +30,9 @@ body {
     transition: 
     1s background-color linear,
     0.5s color linear;
-    font-size: larger;
+    font-size: 2rem;
     letter-spacing: 2px;
+    font-weight: 700;
   }
 
   button:hover{
