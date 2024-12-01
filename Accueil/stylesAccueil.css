@@ -185,7 +185,6 @@ input[type="text"]:focus {
 .button-genere a:hover {
   box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
 }
-<<<<<<< HEAD
 #saveNames{
   font-size: 1.5rem;
   font-weight: 700;
@@ -199,9 +198,6 @@ input[type="text"]:focus {
   border-top: 1px solid rgba(255, 255, 255); border-right: 1px solid rgb(18, 17, 17, 0.2);
   border-bottom: 1px solid rgb(10, 9, 9, 0.2);
 }
-=======
-
->>>>>>> d66d407b43e88b0ea7fde4b5738b06ae84c882d4
 footer {
   position: absolute;
   left: 0;
