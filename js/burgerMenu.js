@@ -4,7 +4,8 @@ const buttonBurger = document.querySelector(".buttonBurger");
 // get button create menu burger
 const buttonCreate = document.querySelector(".create");
 // get container from melangeAleatoire
-import { container } from "./melangeAleatoire.js";
+import createAllDiv from "./createDiv.js";
+import { container, names } from "./reveal.js";
 
 
 
@@ -23,22 +24,13 @@ function apearBurgerMenu(event) {
 function createDiv(event) {
 
     // get input value in menu burger
-    const name = (document.querySelector("input").value).toString();    
+    const name = (document.querySelector("input").value).toString();
+    if (name.trim() !== "") {
+        names.push(name.trim());
+    }
+    // set new item on local storage
+    localStorage.setItem("savedNames", JSON.stringify(names));
 
-    // create new p
-    const newP = document.createElement("p");
-    // ADD class ".name" at the new P
-    newP.classList.add("name");
-    // ADD name inside newP
-    newP.appendChild(document.createTextNode(`${name}`));
-
-    // create div
-    const newDiv = document.createElement("div");
-    // ADD class ".seat" at the new div
-    newDiv.classList.add("seat")
-    // ADD newP inside newDiv
-    newDiv.appendChild(newP);    
-    // ADD newdiv at the end of the container div
-    container.appendChild(newDiv);
+   createAllDiv(name, container);
 };
 
