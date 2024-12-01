@@ -1,7 +1,9 @@
 // GET
 
 // all names
-let names = ["nadir", "sirene", "hamza", "karl", "ali", "jeremi", "marion", "mohand", "hamed", "simon", "clement", "élodi", "naïm A", "naïm B", "mathias"];
+
+// get element from the local storage
+const names = JSON.parse(localStorage.getItem("savedNames"));   
 // divs
 const container = document.querySelector(".container");
 // how much places
@@ -9,7 +11,6 @@ const nPlaces = names.length - 1;
 
 
 // event
-
 
 // functions
 
@@ -43,3 +44,5 @@ names.forEach((name) => {
         // ADD newdiv at the end of the container div
         container.appendChild(newDiv);
 });
+
+
