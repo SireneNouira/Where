@@ -18,7 +18,7 @@ function saveNames() {
     }
   });
 
-  if (noms.length === 15) {
+  if (noms.length >= 2) {
     localStorage.setItem("savedNames", JSON.stringify(noms));
     alert("Prénoms sauvegardés !");
   } else {
@@ -29,7 +29,7 @@ function saveNames() {
 
 function loadNames() {
   const savedNames = JSON.parse(localStorage.getItem("savedNames"));
-  if (savedNames && savedNames.length === 15) {
+  if (savedNames && savedNames.length >= 2) {
     inputs.forEach((input, index) => {
       input.value = savedNames[index] || "";
     });
