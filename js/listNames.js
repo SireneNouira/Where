@@ -22,8 +22,7 @@ imgs.forEach(img => {
 });
 
 
-
-function suppName(event) {
+export default function suppName(event) {
     // get container div to delete it
     let containerDivs = document.querySelectorAll(".seat");
     // delete the container div 
