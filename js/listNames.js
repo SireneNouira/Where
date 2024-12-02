@@ -7,6 +7,9 @@ import createImg from "./createImg.js";
 // import disappear function
 import disappear from "./diseapper.js";
 
+var count = 0;
+
+
 names.forEach((name) => {
     // create div foreach name
     const newDiv = document.createElement("div");
@@ -31,6 +34,12 @@ imgs.forEach(img => {
 
 
 function suppName(event) {
+    // get container div to delete it
+    let containerDivs = document.querySelectorAll(".seat");
+    console.log(containerDivs);
+    // delete the container div 
+    disappear(containerDivs[count]);
+    count += 1;
     // supp la div de la list 
     disappear(event.target.parentElement);
     
