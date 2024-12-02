@@ -1,6 +1,5 @@
 //get
 
-const divs = document.querySelectorAll(".seat");
 var countH = 250;
 var countV = 190;
 var countH2 = 250;
@@ -10,6 +9,7 @@ const emplacementU = document.querySelector(".u");
 emplacementU.addEventListener("click", handleAfficheEmplacementU);
 
 function handleAfficheEmplacementU() {
+
   if (count === 0) {
     emplacement();
     count += 1;
@@ -17,6 +17,7 @@ function handleAfficheEmplacementU() {
 }
 
 function emplacement() {
+  const divs = document.querySelectorAll(".seat");
   divs.forEach((div, index) => {
     if (index < 6) {
       div.style.top = 150 + "px";
