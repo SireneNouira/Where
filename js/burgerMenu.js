@@ -13,7 +13,6 @@ import { container, names } from "./reveal.js";
 import disappear from "./diseapper.js";
 
 
-
 // EVENT
 buttonBurger.addEventListener("click", apearBurgerMenu);
 buttonDisappear.addEventListener("click", disappearBurgerMenu);
@@ -49,8 +48,7 @@ function callDivCreator(event) {
     const name = (input.value).toString();
 
     if (name.trim() !== "") {
-        console.log(name)
-        names.push(name.trim());    
+        names.push(name.trim());
 
         // set new item on local storage
         localStorage.setItem("savedNames", JSON.stringify(names));
