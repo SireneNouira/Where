@@ -36,3 +36,4 @@ function mouseMove(event) {
 function mouseUp (event) {
     document.removeEventListener("mousemove", mouseMove);
 };
+

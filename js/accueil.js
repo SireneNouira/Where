@@ -15,8 +15,9 @@ saveButton.addEventListener("click", saveNames);
 function saveNames() {
   noms = [];
   inputs.forEach((input) => {
-    if (input.value.trim() !== "") {
-      noms.push(input.value.trim());
+    const value = (input.value).toString();
+    if (value.trim() !== "") {
+      noms.push(value.trim());
     }
   });
 

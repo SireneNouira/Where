@@ -24,7 +24,7 @@ body {
     justify-content: end;
     width: 90%;
     z-index: 500;
-
+    cursor: pointer;
     /* div with 2 hr */
     .plus {
       display: flex;
@@ -93,7 +93,7 @@ body {
   }
 
   /* menu burger */
-  .menuBurger{
+.menuBurger{
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -106,7 +106,7 @@ body {
     backdrop-filter: blur(20px);
     box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-
+    
     /* input */
     input{
       border: none;
@@ -136,6 +136,7 @@ body {
         0.2s background-color linear,
         0.2s border linear
       ;
+    
     }
 
     /* animation create button */
@@ -162,6 +163,7 @@ body {
     font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 700;
+    cursor: pointer;
   }
 
   /* animation of reveal button */
@@ -171,18 +173,80 @@ body {
     color: rgba(255, 255, 255);
   }
 }
+section{
+ width: 90%;
+ height: 90%;
+ display: flex;
 
+}
+.listNames{
+  background-color: rgb(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 10px solid rgba(255, 255, 255, 0.3);
+  margin-left: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    div{
+      display: flex;
+      gap: 5px;
+    }
+  }
+  input{
+    background:transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.u{
+  margin: 5rem;
+  padding: 10px;
+  border-radius: 50px;
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255);
+  border-top: 1px solid rgba(255, 255, 255); border-right: 1px solid rgb(18, 17, 17, 0.2);
+  border-bottom: 1px solid rgb(10, 9, 9, 0.2);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+}
 .container {
   display: flex;
   justify-content: center;
   gap: 5%;
-  width: 90%;
-  height: 70%;
-  padding: 25px 0px;
+  width: 80%;
+  height: 90%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(20px);
   box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .seat {
@@ -201,8 +265,8 @@ body {
   user-select: none;
   font-size: 2rem;
   position: fixed;
+  
 }
-
 .name{
   opacity: 0;
   transition: opacity 1s linear;

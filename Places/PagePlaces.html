@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesPlaces.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesPlaces.css" />
 
     <script defer type="module" src="../js/melangeAleatoire.js"></script>
     <script defer type="module" src="../js/reveal.js"></script>
     <script defer type="module" src="../js/burgerMenu.js"></script>
     <script defer src="../js/dragAndDrop.js"></script>
     <script type="module" src="../js/confetti.js"></script>
-    <script src="../js/diseapper.js"></script>
+    <script type="module" src="../js/diseapper.js"></script>
+    <script defer src="../js/place.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Where ?</title>
   </head>
   <body>
@@ -25,30 +26,36 @@
     <!-- button burger -->
     <div class="buttonBurger">
       <div class="plus">
-      <hr class="horizon">
-      <hr class="vertical">
+        <hr class="horizon" />
+        <hr class="vertical" />
       </div>
     </div>
 
     <!-- disapear button -->
     <div class="disappearButtonBurger">
       <div class="plus">
-      <hr class="horizon">
-      <hr class="vertical">
+        <hr class="horizon" />
+        <hr class="vertical" />
       </div>
     </div>
-    
+
     <!-- menu burger -->
     <div class="menuBurger">
-      <input type="text" placeholder="name">
+      <input type="text" placeholder="name" />
       <button class="create">create</button>
     </div>
 
     <!-- button reveal -->
     <button class="reveal">REVEAL</button>
 
-    <!-- container -->
-    <div class="container">
-    </div>
+      
+    <section>
+      <!-- container -->
+      <div class="container"></div>
+      <div class="listNames">
+         <button class="u">Emplacement en U</button>
+      </div>
+     
+    </section>
   </body>
 </html>
