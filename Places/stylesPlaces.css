@@ -32,6 +32,7 @@ body {
       background-color: rgb(255, 255, 255, 0.5);
       height: 50px;
       width: 50px;
+      margin-top: 10px;
       border: white 2px solid;
       border-radius: 100px;
       backdrop-filter: blur(20px);
@@ -69,6 +70,7 @@ body {
       background-color: rgb(255, 255, 255, 0.5);
       height: 50px;
       width: 50px;
+      margin-top: 10px;
       border: white 2px solid;
       border-radius: 100px;
       backdrop-filter: blur(20px);
