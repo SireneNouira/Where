@@ -36,6 +36,9 @@ function reveal(event) {
 
     // get all div with class .seat
     const seatDivs = document.querySelectorAll(".seat");
+    // get cross icones 
+    const crossNameLists = document.querySelectorAll(".divCross");
+    
 
     // return names random
     let namesRandom = randomizer(names)
@@ -58,4 +61,5 @@ function reveal(event) {
     });
 
     disappear(revealButton);
+    disappear(crossNameLists);
 };
