@@ -7,10 +7,13 @@ const buttonCreate = document.querySelector(".create");
 const buttonDisappear = document.querySelector(".disappearButtonBurger");
 // get menu burger
 const menuBurger = document.querySelector(".menuBurger");
-// get container from melangeAleatoire
+// get list name
+const listNames = document.querySelector(".listNames");
+// IMPORT
 import createAllDiv from "./createDiv.js";
 import { container, names } from "./reveal.js";
 import disappear from "./diseapper.js";
+import createListName from "./createListName.js";
 
 
 // EVENT
@@ -54,7 +57,10 @@ function callDivCreator(event) {
         localStorage.setItem("savedNames", JSON.stringify(names));
 
         createAllDiv(name, container);
+        createListName(name, listNames);
+
     };
+
     // for reset input
     input.value = "";
 };
