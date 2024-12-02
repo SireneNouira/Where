@@ -26,7 +26,6 @@ imgs.forEach(img => {
 function suppName(event) {
     // get container div to delete it
     let containerDivs = document.querySelectorAll(".seat");
-    console.log(containerDivs);
     // delete the container div 
     disappear(containerDivs[count]);
     count += 1;
