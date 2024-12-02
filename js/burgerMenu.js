@@ -11,6 +11,7 @@ const menuBurger = document.querySelector(".menuBurger");
 import createAllDiv from "./createDiv.js";
 import { container, names } from "./reveal.js";
 import disappear from "./diseapper.js";
+import createImg from "./createImg.js";
 
 
 
