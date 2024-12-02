@@ -11,8 +11,6 @@ const menuBurger = document.querySelector(".menuBurger");
 import createAllDiv from "./createDiv.js";
 import { container, names } from "./reveal.js";
 import disappear from "./diseapper.js";
-import createImg from "./createImg.js";
-
 
 
 // EVENT
@@ -50,8 +48,7 @@ function callDivCreator(event) {
     const name = (input.value).toString();
 
     if (name.trim() !== "") {
-        console.log(name)
-        names.push(name.trim());    
+        names.push(name.trim());
 
         // set new item on local storage
         localStorage.setItem("savedNames", JSON.stringify(names));

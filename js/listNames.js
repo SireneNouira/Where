@@ -4,7 +4,8 @@ const listDiv = document.querySelector(".listNames");
 import { names } from "./reveal.js";
 // import creator of img
 import createImg from "./createImg.js";
-
+// import disappear function
+import disappear from "./diseapper.js";
 
 names.forEach((name) => {
     // create div foreach name
@@ -18,3 +19,29 @@ names.forEach((name) => {
     // ADD newdiv at the end of the container div
     listDiv.appendChild(newDiv);
 });
+
+const imgs = document.querySelectorAll(".divCross");
+
+
+// EVENT
+imgs.forEach(img => {
+    img.addEventListener("click", suppName);
+});
+
+
+
+function suppName(event) {
+    // supp la div de la list 
+    disappear(event.target.parentElement);
+    
+    // get text of the previous sibling of the target event and transforme the value into string
+    let value = (event.target.previousSibling.textContent).toString();
+    
+    // find the first index if element == value
+    var index = names.findIndex((element) => element == value);
+    // for supp one element at the index
+    names.splice(index, 1);
+    
+    // set new item on local storage
+    localStorage.setItem("savedNames", JSON.stringify(names));
+};
