@@ -13,6 +13,10 @@ export const names = JSON.parse(localStorage.getItem("savedNames")) || [];
 export const container = document.querySelector(".container");
 // button for reveal
 const revealButton = document.querySelector(".reveal");
+// burger button
+const burgerButton = document.querySelectorAll(".plus");
+// menu burger
+const menuBurger = document.querySelector(".menuBurger");
 var time = 1000;
 var count = 0;
 
@@ -62,4 +66,6 @@ function reveal(event) {
 
     disappear(revealButton);
     disappear(crossNameLists);
+    disappear(burgerButton);
+    disappear(menuBurger);
 };
