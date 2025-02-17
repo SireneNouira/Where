@@ -1,5 +1,5 @@
 <h2>🚀 Démo</h2>
-<a href="https://nadir-where.pro4.garage404.com/Accueil/Accueil.html">WHERE</a>
+    <p>L'application est déployé et accessible en ligne : <a href="https://nadir-where.pro4.garage404.com/Accueil/Accueil.html" target="_blank">WHERE</a></p>
 
 <h2>🛠 Technologies utilisées</h2>
 <ul>
