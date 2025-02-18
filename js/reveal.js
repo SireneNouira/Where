@@ -25,7 +25,7 @@ var count = 0;
 // check if il y a au moin deux noms
 if (names.length < 2) {
     alert("Aucune donnée valide trouvée. Retour à la page précédente.");
-    window.location.href = "index.html";
+    window.location.href = "index.php";
 };
 
 
